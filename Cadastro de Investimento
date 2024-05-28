@@ -1,0 +1,87 @@
+//HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro de investimento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <id class="container">
+    <h1>Cadastro de investimentos</h1>
+
+    <label>Nome do investimento</label>
+    <input type = "text" id = "investimentoNome" name="investimentoNome" required>
+    <p>
+        <label>Nome da Ação</label>
+        <input type="text" id="NomeAcao" name="NomeAcao"required>
+    </p>
+        
+    <p>
+        <label>Valor de Compra</label>
+        <input type="number" id="ValorCompra" name="ValorCompra"required>
+    </p>
+    <p>
+        <label>Valor de Venda</label>
+        <input type="number" id="ValorVenda" name="ValorVenda"required>
+    </p>
+    <p>
+        <label>Patrimonio acomulado</label>
+        <input type="number" id="patrimonio" name="patrimonio"required>
+    </p>
+    <button onclick="multiplication()">Cadastrar</button>
+
+        <p class="result" id="resultado"></p>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+//CSS
+body{
+    background-color: rgb(215, 127, 233);
+}
+
+.container{
+    width: 20%;
+    height: 250px;
+    margin: 0 auto;
+    background: rgb(206, 128, 236);
+    border-radius: 15px;
+    border-color: black;
+}
+input{
+    width: 450px;
+    height: 50px;
+    border-radius: 15px;
+    border-color: black;
+    padding: 5px;
+    margin: 5px;
+}
+
+button{
+    width: 100px;
+    height: 50px;
+    border-radius: 15px;
+    border-color: black;
+    background-color: rgb(144, 240, 240);
+    color: rgb(0, 0, 0);
+
+}
+
+
+//JS
+function multiplication(){
+    var investimentoNome = document.getElementById('investimentoNome').value;
+    var NomeAcao = document.getElementById('NomeAcao').value;
+    var ValorCompra = document.getElementById('ValorCompra').value;
+    var ValorVenda = document.getElementById('ValorVenda').value;
+    var patrimonio = document.getElementById('patrimonio').value;
+
+    var resultado = parseFloat(ValorCompra) * parseFloat(ValorVenda);
+    document.getElementById('resultado').innerHTML = resultado;
+}
