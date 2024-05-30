@@ -1,0 +1,83 @@
+//HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle Financeiro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <id class="container">
+    <h1>controle de financeito</h1>
+
+    <label>Nome</label>
+    <input type = "text" id = "Nome" name="Nome" required>
+    <p>
+        <label>valor do salario</label>
+        <input type="text" id="salario" name="salario"required>
+    </p>
+        
+    <p>
+        <label>Valor de despesa</label>
+        <input type="number" id="despesa" name="despesa"required>
+    </p>
+    <p>
+        <label>Valor Liquido</label>
+        <input type="number" id="liquido" name="liquido"required>
+    </p>
+    
+    <button onclick="subtração()">Cadastrar</button>
+
+        <p class="result" id="resultado"></p>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+  //CSS
+  body{
+    background-color: rgb(215, 127, 233);
+}
+
+.container{
+    width: 20%;
+    height: 250px;
+    margin: 0 auto;
+    background: rgb(206, 128, 236);
+    border-radius: 15px;
+    border-color: black;
+}
+input{
+    width: 450px;
+    height: 50px;
+    border-radius: 15px;
+    border-color: black;
+    padding: 5px;
+    margin: 5px;
+}
+
+button{
+    width: 100px;
+    height: 50px;
+    border-radius: 15px;
+    border-color: black;
+    background-color: rgb(144, 240, 240);
+    color: rgb(0, 0, 0);
+
+}
+
+
+//JS
+function subtração(){
+    var Nome = document.getElementById('Nome').value;
+    var salario = document.getElementById('salario').value;
+    var despesa = document.getElementById('despesa').value;
+    var liquido = document.getElementById('liquido').value;
+    
+
+    var resultado = parseFloat(salario) - parseFloat(despesa);
+    document.getElementById('resultado').innerHTML = resultado;
+}
