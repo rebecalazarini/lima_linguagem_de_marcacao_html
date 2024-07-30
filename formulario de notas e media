@@ -1,4 +1,4 @@
-//HTML
+<!-- //HTML -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>formulario de notas</title>
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* //CSS */
+body{
+    background-color: rgb(223, 74, 143);
+}
+
+.container{
+    width: 20%;
+    height: 250px;
+    margin: 0 auto;
+    background: rgb(226, 97, 157);
+    border-radius: 15px;
+    border-color: black;
+}
+input{
+    width: 450px;
+    height: 50px;
+    border-radius: 15px;
+    border-color: rgb(0, 0, 0);
+    padding: 5px;
+    margin: 5px;
+}
+
+button{
+    width: 100px;
+    height: 50px;
+    border-radius: 15px;
+    border-color: black;
+    background-color: rgb(158, 121, 226);
+    color: rgb(0, 0, 0);
+
+}
+
+    </style>
 </head>
 <body>
    <id class="container">
@@ -34,44 +69,10 @@
     
 
     <script src="script.js"></script>
-</body>
-</html>
 
-
-//CSS
-body{
-    background-color: rgb(215, 127, 233);
-}
-
-.container{
-    width: 20%;
-    height: 250px;
-    margin: 0 auto;
-    background: rgb(206, 128, 236);
-    border-radius: 15px;
-    border-color: black;
-}
-input{
-    width: 450px;
-    height: 50px;
-    border-radius: 15px;
-    border-color: black;
-    padding: 5px;
-    margin: 5px;
-}
-
-button{
-    width: 100px;
-    height: 50px;
-    border-radius: 15px;
-    border-color: black;
-    background-color: rgb(144, 240, 240);
-    color: rgb(0, 0, 0);
-
-}
-
-//JS
-function somar(){
+    <script>
+        //JS
+    function somar(){
     var Nome = document.getElementById('Nome').value;
     var nota1 = document.getElementById('nota1').value;
     var nota2 = document.getElementById('nota2').value;
@@ -81,3 +82,8 @@ function somar(){
     var resultado = parseFloat(nota1) + parseFloat(nota2) + parseFloat(nota3) / 3;
     document.getElementById('resultado').innerHTML = resultado;
 }
+    </script>
+</body>
+</html>
+
+  
