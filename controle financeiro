@@ -1,4 +1,4 @@
-//HTML
+<!-- CONTROLE FINANCEIRO html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,38 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Controle Financeiro</title>
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-   <id class="container">
-    <h1>controle de financeito</h1>
-
-    <label>Nome</label>
-    <input type = "text" id = "Nome" name="Nome" required>
-    <p>
-        <label>valor do salario</label>
-        <input type="text" id="salario" name="salario"required>
-    </p>
-        
-    <p>
-        <label>Valor de despesa</label>
-        <input type="number" id="despesa" name="despesa"required>
-    </p>
-    <p>
-        <label>Valor Liquido</label>
-        <input type="number" id="liquido" name="liquido"required>
-    </p>
-    
-    <button onclick="subtração()">Cadastrar</button>
-
-        <p class="result" id="resultado"></p>
-    </div>
-    
-
-    <script src="script.js"></script>
-</body>
-</html>
-
-  //CSS
+    <style>
+        /* //CSS */
   body{
     background-color: rgb(215, 127, 233);
 }
@@ -69,8 +39,38 @@ button{
 
 }
 
+</style>
+</head>
+<body>
+   <id class="container">
+    <h1>controle de financeito</h1>
 
-//JS
+    <label>Nome</label>
+    <input type = "text" id = "Nome" name="Nome" required>
+    <p>
+        <label>valor do salario</label>
+        <input type="text" id="salario" name="salario"required>
+    </p>
+        
+    <p>
+        <label>Valor de despesa</label>
+        <input type="number" id="despesa" name="despesa"required>
+    </p>
+    <p>
+        <label>Valor Liquido</label>
+        <input type="number" id="liquido" name="liquido"required>
+    </p>
+    
+    <button onclick="subtração()">Cadastrar</button>
+
+        <p class="result" id="resultado"></p>
+    </div>
+    
+
+    <script src="script.js"></script>
+
+    <script>
+        //JS
 function subtração(){
     var Nome = document.getElementById('Nome').value;
     var salario = document.getElementById('salario').value;
@@ -81,3 +81,10 @@ function subtração(){
     var resultado = parseFloat(salario) - parseFloat(despesa);
     document.getElementById('resultado').innerHTML = resultado;
 }
+
+    </script>
+</body>
+</html>
+
+  
+
