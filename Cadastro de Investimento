@@ -1,4 +1,4 @@
-//HTML
+<!-- cadastro de investimento -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -8,7 +8,7 @@
     <title>cadastro de investimento</title>
     <link rel="stylesheet" href="style.css">
 
-//CSS
+<!-- //CSS -->
 
     <style> 
         body{
@@ -73,7 +73,7 @@ button{
 
     <script src="script.js"></script>
 
-//JS
+<!-- //JS -->
 
     <script>
         function multiplication(){
@@ -89,3 +89,4 @@ button{
     </script>
 </body>
 </html>
+   
