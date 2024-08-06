@@ -1,0 +1,13 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <!-- tag img é utilizada para importar imagens -->
+        <img src="panda.jpg">
+
+         <!-- tag a é utilizada para links -->
+        <a href="https://www.w3schools.com/">W3Schools</a>
+    </body>
+</html>
